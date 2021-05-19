@@ -44,7 +44,8 @@ Venue.create!(name: "Ambrose West", location: "Asheville, NC", category: "Small"
 
 # Venue.create!()
 
-BandUser.create!(name: "Jackson Harem")
+BandUser.create!(name: "Jackson Harem", email: 'jacksonharem@gmail.com', password: 'haremhappy')
+BandUser.create!(name: "The Tests", email: 'tests@gmail.com', password: 'testy')
 
 Tour.create!(band_user_id: BandUser.all.sample.id, name: "Honda Fit Tour")
 
