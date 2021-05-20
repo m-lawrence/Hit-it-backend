@@ -44,10 +44,10 @@ Venue.create!(name: "Ambrose West", location: "Asheville, NC", category: "Small"
 
 # Venue.create!()
 
-BandUser.create!(name: "Jackson Harem", email: 'jacksonharem@gmail.com', password: 'haremhappy', facebook: 'https://www.facebook.com/JacksonHarem/', music_link: 'https://jacksonharem.bandcamp.com/releases', genre: 'compost-punk', location: 'Asheville, NC', image: 'https://scontent-iad3-1.xx.fbcdn.net/v/t31.18172-8/28161956_489720901422638_2457172188842085365_o.jpg?_nc_cat=103&ccb=1-3&_nc_sid=973b4a&_nc_ohc=pzgM08zLznQAX-IDbB_&_nc_ht=scontent-iad3-1.xx&oh=194b401fc9775fb971dec2b5b8b25393&oe=60CCDBE7', bio: 'Like getting kicked in the teeth by an angel.', band_members: 'Guitar: Ray, Bass: Elliott, Drums/Vox: Missy')
-BandUser.create!(name: "The Tests", email: 'tests@gmail.com', password: 'testy', website: 'thetests.com', genre: 'punk', location: 'Asheville, NC', image: 'https://lh3.googleusercontent.com/proxy/MoBlsnHplw4_rfrfdxpFLtG2LM4bI2_jYcXzlx4T-t3Yn6aoUsKz7rgi-H1TqWp5lTu6T_hQGGzm5J-NzGTlC5C6uSj2dDkLq27K40tehMwyJrPZ6DBW22AWrc5s', bio: 'Test bio', band_members: 'Recorder: Tom Test, Flute: Tina Test')
+BandUser.create!(name: "Jackson Harem", email: 'jacksonharem@gmail.com', password: 'abc', facebook: 'https://www.facebook.com/JacksonHarem/', music_link: 'https://jacksonharem.bandcamp.com/releases', genre: 'compost-punk', location: 'Asheville, NC', image: 'https://scontent-iad3-1.xx.fbcdn.net/v/t31.18172-8/28161956_489720901422638_2457172188842085365_o.jpg?_nc_cat=103&ccb=1-3&_nc_sid=973b4a&_nc_ohc=pzgM08zLznQAX-IDbB_&_nc_ht=scontent-iad3-1.xx&oh=194b401fc9775fb971dec2b5b8b25393&oe=60CCDBE7', bio: 'Like getting kicked in the teeth by an angel.', band_members: 'Guitar: Ray, Bass: Elliott, Drums/Vox: Missy')
+BandUser.create!(name: "The Tests", email: 'tests@gmail.com', password: 'abc', website: 'thetests.com', genre: 'punk', location: 'Asheville, NC', image: 'https://lh3.googleusercontent.com/proxy/MoBlsnHplw4_rfrfdxpFLtG2LM4bI2_jYcXzlx4T-t3Yn6aoUsKz7rgi-H1TqWp5lTu6T_hQGGzm5J-NzGTlC5C6uSj2dDkLq27K40tehMwyJrPZ6DBW22AWrc5s', bio: 'Test bio', band_members: 'Recorder: Tom Test, Flute: Tina Test')
 
-Tour.create!(band_user_id: BandUser.all.sample.id, name: "Honda Fit Tour")
+Tour.create!(band_user_id: BandUser.all.sample.id, name: "Honda Fit Tour", image: 'https://f4.bcbits.com/img/0010723369_10.jpg')
 
 Show.create!(tour_id: Tour.all.sample.id, location: "Asheville, NC", venue_id: Venue.all.sample.id)
 
