@@ -49,7 +49,7 @@ BandUser.create!(name: "The Tests", email: 'tests@gmail.com', password: 'abc', w
 
 Tour.create!(band_user_id: BandUser.all.sample.id, name: "Honda Fit Tour", image: 'https://f4.bcbits.com/img/0010723369_10.jpg')
 
-Show.create!(tour_id: Tour.all.sample.id, location: "Asheville, NC", venue_id: Venue.all.sample.id)
+Show.create!(tour_id: Tour.all.sample.id, location: "Asheville, NC", venue_id: Venue.all.sample.id, date: '2021-07-31', time: '24:00:00')
 
 
 puts "Seeded! Yayyy!"
