@@ -16,6 +16,8 @@ Show.reset_pk_sequence
 Tour.reset_pk_sequence
 BandUser.reset_pk_sequence
 
+
+Venue.create!(name: "TBD", location: "")
 # AVL Venues
 
 Venue.create!(name: "Fleetwood's", location: "Asheville, NC", category: "Dive Bar", image: "https://untappd.akamaized.net/photo/2020_09_26/232bcdac3882a19614924543e9ca4205_c_946426852_640x640.jpg", website: "https://fleetwoodschapel.com/", booking: "fleetwoodsonhaywood@gmail.com", description: "Fleetwood’s Rock-n-Roll wedding chapel is Asheville’s Vegas style Wedding chapel!  When we’re not hosting a wedding, we have killer rock-n-roll bands and comedy in the chapel.", latitude: 35.57876292612884, longitude: -82.58372322698293)
