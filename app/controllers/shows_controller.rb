@@ -21,6 +21,7 @@ class ShowsController < ApplicationController
     def update
         show = Show.find(params[:id])
         show.update(show_params)
+        render json: show
     end
 
     def destroy
