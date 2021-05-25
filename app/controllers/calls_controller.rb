@@ -15,7 +15,7 @@ class CallsController < ApplicationController
 
     def create 
         call = Call.create(call_params)
-        render json: show
+        render json: call
     end
 
     def update
