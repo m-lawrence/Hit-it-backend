@@ -57,5 +57,6 @@ Show.create!(tour_id: Tour.all.sample.id, location: "Asheville, NC", venue_id: V
 
 Call.create!(band_user_id: BandUser.all.sample.id, location: 'Asheville, NC', date: '2021-08-08', time: '21:00:00', venue_name: 'TBD')
 Call.create!(band_user_id: BandUser.all.sample.id, location: 'Asheville, NC', date: '2021-07-24', time: '21:00:00', venue_name: "Fleetwood's")
+Call.create!(band_user_id: BandUser.all.sample.id, location: 'Raleigh, NC', date: '2021-07-24', time: '21:00:00', venue_name: "Slim's")
 
 puts "Seeded! Yayyy!"
