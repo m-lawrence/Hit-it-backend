@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :calls
   resources :venues
   resources :shows
   resources :tours

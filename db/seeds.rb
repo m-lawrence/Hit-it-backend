@@ -9,11 +9,13 @@
 Venue.destroy_all 
 Show.destroy_all
 Tour.destroy_all
+Call.destroy_all
 BandUser.destroy_all
 
 Venue.reset_pk_sequence
 Show.reset_pk_sequence
 Tour.reset_pk_sequence
+Call.reset_pk_sequence
 BandUser.reset_pk_sequence
 
 # default tbd venu
@@ -53,5 +55,7 @@ Tour.create!(band_user_id: BandUser.all.sample.id, name: "Honda Fit Tour", image
 
 Show.create!(tour_id: Tour.all.sample.id, location: "Asheville, NC", venue_id: Venue.all.sample.id, date: '2021-07-31', time: '17:00:00', other_bands: "The Power, The Retinas", details: "Load in at 6. We're on second")
 
+Call.create!(band_user_id: BandUser.all.sample.id, location: 'Asheville, NC', date: '2021-08-08', time: '21:00:00', venue_name: 'TBD')
+Call.create!(band_user_id: BandUser.all.sample.id, location: 'Asheville, NC', date: '2021-07-24', time: '21:00:00', venue_name: "Fleetwood's")
 
 puts "Seeded! Yayyy!"
