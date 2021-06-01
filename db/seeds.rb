@@ -96,10 +96,20 @@ BandUser.create!(name: "Fuzzy Skulls", email: "fuzzyskullsband@gmail.com", passw
 # Chattanooga bands
 BandUser.create!(name: "The Pearloids", email: "thepearloids@gmail.com", password: "abc", facebook: "https://www.facebook.com/thepearloids", music_link: "https://www.youtube.com/watch?v=eEsIXa4Dngk", genre: "garage", location: "Chattanooga, TN", image: "https://scontent-iad3-1.xx.fbcdn.net/v/t1.6435-9/78600264_108339790642414_208257367840653312_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=jerRS0H6n4QAX_ddErC&_nc_ht=scontent-iad3-1.xx&oh=e15819f9184f4c6aaf3a767f63d0a721&oe=60D9B77F", bio: "Post Bolo Rock-N-Rollo!")
 
+puts "seeded bands"
 
-Tour.create!(band_user_id: BandUser.all.sample.id, name: "Honda Fit Tour", image: 'https://f4.bcbits.com/img/0010723369_10.jpg')
+Tour.create!(band_user_id: 1, name: "Honda Fit Tour", image: 'https://f4.bcbits.com/img/0010723369_10.jpg')
+Tour.create!(band_user_id: 2, name: "Gettin Testy", image: 'https://scontent-iad3-1.xx.fbcdn.net/v/t31.18172-8/19223035_393471877714208_3200804446533528381_o.jpg?_nc_cat=106&ccb=1-3&_nc_sid=e3f864&_nc_ohc=1VldWRo_QJ0AX8Y8xch&_nc_ht=scontent-iad3-1.xx&oh=fc9678c90c6313a9b6f27affc9d38ab2&oe=60DA5579')
 
-Show.create!(tour_id: Tour.all.sample.id, location: "Asheville, NC", venue_id: Venue.all.sample.id, date: '2021-07-31', time: '17:00:00', other_bands: "The Power, The Retinas", details: "Load in at 6. We're on second")
+puts "seeded tours"
+
+Show.create!(tour_id: 2, location: "Asheville, NC", venue_id: 2, date: '2019-07-31', time: '21:00:00', other_bands: "The Power, White Oak Splits", details: "Load in at 7. We're on second")
+Show.create!(tour_id: 2, location: "Raliegh, NC", venue_id: 26, date: '2019-08-01', time: '21:00:00', other_bands: "IAMDYNAMITE", details: "Load in at 6")
+Show.create!(tour_id: 2, location: "Richmond, VA", venue_id: 27, date: '2019-08-02', time: '21:00:00', other_bands: "Brain Drain, Toxic Moxie", details: "Load in at 6, then sound check")
+Show.create!(tour_id: 2, location: "Philidelphia, PA", venue_id: 32, date: '2019-08-03', time: '21:00:00', other_bands: "The Retinas", details: "Load in at 6:30")
+Show.create!(tour_id: 2, location: "Washington, DC", venue_id: 28, date: '2019-08-04', time: '21:00:00', other_bands: "Fuzzy Skulls, American Spit", details: "Load in at 7. We're on second")
+
+puts "seeded shows"
 
 Call.create!(band_user_id: 1, location: 'Asheville, NC', date: '2021-08-07', time: '21:00:00', venue_name: "Fleetwood's", details: "Need one more band. It's us and Fortezza.")
 Call.create!(band_user_id: 1, location: 'Athens, GA', date: '2021-07-24', time: '21:00:00', venue_name: "TBD", details: "In need of one more band. Waltz is also playing. Still working on a venue, but might be Little Kings.")
@@ -113,5 +123,7 @@ Call.create!(band_user_id: 10, location: 'Asheville', date: '2021-08-30', time: 
 Call.create!(band_user_id: 9, location: 'Athens, Ga', date: '2021-07-18', time: '21:00:00', venue_name: "The World Famous", details: "Date's secured, looking for a couple bands to fill out the bill")
 Call.create!(band_user_id: 11, location: 'Asheville, NC', date: '2021-08-01', time: '21:00:00', venue_name: "Sly Grog", details: "Playing with The Tests and looking for one more!")
 Call.create!(band_user_id: 9, location: 'Asheville, NC', date: '2021-07-17', time: '21:00:00', venue_name: "Fleetwood's", details: "Looking for one more band. You'll be joing us and Fashion Bath!")
+
+puts "seeded calls"
 
 puts "Seeded! Yayyy!"
