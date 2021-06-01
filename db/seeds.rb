@@ -101,8 +101,17 @@ Tour.create!(band_user_id: BandUser.all.sample.id, name: "Honda Fit Tour", image
 
 Show.create!(tour_id: Tour.all.sample.id, location: "Asheville, NC", venue_id: Venue.all.sample.id, date: '2021-07-31', time: '17:00:00', other_bands: "The Power, The Retinas", details: "Load in at 6. We're on second")
 
-Call.create!(band_user_id: BandUser.all.sample.id, location: 'Asheville, NC', date: '2021-08-08', time: '21:00:00', venue_name: 'TBD')
-Call.create!(band_user_id: BandUser.all.sample.id, location: 'Asheville, NC', date: '2021-07-24', time: '21:00:00', venue_name: "Fleetwood's")
-Call.create!(band_user_id: BandUser.all.sample.id, location: 'Raleigh, NC', date: '2021-07-24', time: '21:00:00', venue_name: "Slim's")
+Call.create!(band_user_id: 1, location: 'Asheville, NC', date: '2021-08-07', time: '21:00:00', venue_name: "Fleetwood's", details: "Need one more band. It's us and Fortezza.")
+Call.create!(band_user_id: 1, location: 'Athens, GA', date: '2021-07-24', time: '21:00:00', venue_name: "TBD", details: "In need of one more band. Waltz is also playing. Still working on a venue, but might be Little Kings.")
+Call.create!(band_user_id: 3, location: 'Athens, GA', date: '2021-07-25', time: '22:00:00', venue_name: "The World Famous", details: "Just need one more band to join us and The Georgia Dish Boys")
+Call.create!(band_user_id: 2, location: 'Athens, GA', date: '2021-07-16', time: '21:00:00', venue_name: "TBD", details: "You know you wanna play with us!")
+Call.create!(band_user_id: 4, location: 'Athens, Ga', date: '2021-07-10', time: '22:00:00', venue_name: "Flicker Theatre & Bar", details: "Need one more to fill the bill")
+Call.create!(band_user_id: 6, location: 'Asheville, NC', date: '2021-07-09', time: '21:00:00', venue_name: "The Odditorium", details: "Still looking for two bands to join the bill! We Can help you out in Athens!")
+Call.create!(band_user_id: 7, location: 'Asheville, NC', date: '2021-07-25', time: '21:00:00', venue_name: "The Odditorium", details: "Safety Coffin and us at the odd, just need one more!")
+Call.create!(band_user_id: 5, location: 'Asheville, NC', date: '2021-07-08', time: '20:00:00', venue_name: "TBD", details: "Just passing through, hoping to book something. Let me know if you have anything we can jump on!")
+Call.create!(band_user_id: 10, location: 'Asheville', date: '2021-08-30', time: '21:00:00', venue_name: "Burger Bar", details: "Jackson Harem is on the bill, we've got room for one more!")
+Call.create!(band_user_id: 9, location: 'Athens, Ga', date: '2021-07-18', time: '21:00:00', venue_name: "The World Famous", details: "Date's secured, looking for a couple bands to fill out the bill")
+Call.create!(band_user_id: 11, location: 'Asheville, NC', date: '2021-08-01', time: '21:00:00', venue_name: "Sly Grog", details: "Playing with The Tests and looking for one more!")
+Call.create!(band_user_id: 9, location: 'Asheville, NC', date: '2021-07-17', time: '21:00:00', venue_name: "Fleetwood's", details: "Looking for one more band. You'll be joing us and Fashion Bath!")
 
 puts "Seeded! Yayyy!"
