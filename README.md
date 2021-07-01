@@ -11,3 +11,48 @@ Hit It is an app designed to help independent musicians plan and organize their 
 5. Run 'rails db:seed' to seed database
 6. Ensure that your local PostgreSQL server is running
 7. Clone the frontend repo and follow those installation instructions
+
+## Usage
+
+Sign in to the app using any of the seeded users' email and password
+
+Click on a tour to be directed to the tour show page or click 'create new tour' to fill out the modal form to start a new tour.
+
+Once on a tour show page you may:
+    -click 'add a show' to fill out the modal form to add a new show to the tour
+    -view all tour shows
+    -click the plus sign on a show to view more details and present the options to edit or delete the show
+    -delete a show
+    -edit show information
+
+Use the navbar to direct to the venues page
+    -type a location into the search bar to pull up venues in that location on the map
+    -click icon on map to show pop up information about the venue
+    -filter venues by type
+    -view list of venues
+    -click plus sign on venue card to show more information about the venue
+
+Use navbar to direct to bands page
+    -use search bar to look for bands in a specific location
+    -view list of bands 
+    -click 'band page' on a card to direct to that band's profile page
+
+Use navbar to direct to calls page
+    -view calls in a specific location
+    -click a card to see more information
+    -click 'band page' on a card to be directed to that band's profile page
+    -use search bar to view calls in a specific location
+    -click plus sign icon in top right corner to fill out modal form to create a new call
+
+Use navbar to logout
+
+## Notes
+
+Due to current data limitiations only the following locations are searchable:
+
+venues: Asheville, Atlanta, Athens, Chattanooga, Raleigh, Richmond, Washington DC, Brooklyn, Nashville, Philidelphia 
+
+bands: Asheville, Athens, Philidelphia, Brooklyn, Washington DC, Chattanooga
+
+calls: Asheville, Athens
+    -unless you create a new call in a new location
