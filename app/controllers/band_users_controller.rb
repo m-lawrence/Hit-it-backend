@@ -21,6 +21,7 @@ class BandUsersController < ApplicationController
     def update
         band_user = BandUser.find(params[:id])
         band_user.update(band_user_params)
+        render json: band_user
     end
 
     def destroy
