@@ -1,6 +1,6 @@
 class BandUsersController < ApplicationController
     def index
-        band_users = BandUser.all 
+        band_users = BandUser.all
         render json: band_users
     end
 
@@ -31,6 +31,6 @@ class BandUsersController < ApplicationController
 
 # private
     def band_user_params
-        params.require(:band_user).permit(:email, :password, :name, :website, :facebook, :music_link, :genre, :location, :image, :bio, :band_members, :spotify)
+        params.require(:band_user).permit(:email, :password, :name, :website, :facebook, :music_link, :genre, :location, :image, :bio, :band_members, :spotify, :band_image)
     end
 end
