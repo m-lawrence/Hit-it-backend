@@ -1,4 +1,6 @@
 class BandUsersController < ApplicationController
+    include Rails.application.routes.url_helpers
+
     def index
         band_users = BandUser.all
         render json: band_users
@@ -20,6 +22,7 @@ class BandUsersController < ApplicationController
 
     def update
         band_user = BandUser.find(params[:id])
+        band_image = rails_blob_path(band_user.band_image, disposition: "attachment", only_path: true)
         band_user.update(band_user_params)
         render json: band_user
     end
