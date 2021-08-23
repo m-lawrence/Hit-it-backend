@@ -4,7 +4,10 @@ class BandUserSerializer < ActiveModel::Serializer
   attributes :id, :email, :password, :name, :website, :facebook, :music_link, :genre, :location, :image, :bio, :band_members, :spotify, :band_image
 
   def band_image
-    rails_blob_path(object.band_image, disposition: "attachment", only_path: true) if object.band_image.attached?
+    # rails_blob_path(object.band_image, disposition: "attachment", only_path: true) if object.band_image.attached?
+    if object.band_image.attached? 
+      {url: rails_blob_url(object.band_image)}
+    end
   end
 
   # def band_image
